@@ -129,3 +129,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// Set select placeholder color to #757575 if default option is selected
+function updateSelectColor(select) {
+  if (select.selectedIndex === 0 && select.options[0].disabled && select.options[0].selected) {
+    select.style.color = "#757575";
+  } else {
+    select.style.color = "#333";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  var selects = document.querySelectorAll("select");
+  selects.forEach(function (select) {
+    updateSelectColor(select);
+    select.addEventListener("change", function () {
+      updateSelectColor(select);
+    });
+  });
+});

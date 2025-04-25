@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyMeal - Application Mobile</title>
+    <meta name="description"
+        content="MyMeal - Réservez des tables dans les meilleurs restaurants au Maroc. Découvrez et réservez dans les meilleurs établissements avec notre application mobile facile à utiliser.">
+    <meta name="keywords"
+        content="réservation restaurant, restaurants Maroc, réservation table, application restauration, MyMeal">
+    <meta name="author" content="MyMeal">
+    <meta name="robots" content="index, follow">
+    <title>MyMeal - Réservez dans les Meilleurs Restaurants au Maroc | Application Mobile</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,10 +67,10 @@
                         réservation et transformez-les en réductions sur votre prochaine réservation.</p>
                     <div class="download-buttons an2">
                         <a href="#" class="download-btn">
-                            <img src="assets/appStoreBtn.png" alt="Télécharger sur App Store">
+                            <img src="assets/app-store.svg" alt="Télécharger sur App Store">
                         </a>
                         <a href="#" class="download-btn">
-                            <img src="assets/playStoreBtn.png" alt="Obtenir sur Google Play">
+                            <img src="assets/play-store.svg" alt="Obtenir sur Google Play">
                         </a>
                     </div>
 
@@ -158,26 +164,28 @@
                             MyMeal.</label>
                     </div>
 
+
+
                     <div class="form-row">
                         <div class="form-group">
                             <input type="text" id="restaurant-name" name="restaurant-name"
                                 placeholder="Nom du Restaurant*" required>
                         </div>
-                        <div class="form-group">
-                            <input type="text" id="average-price" name="average-price" placeholder="Prix Moyen*"
-                                required>
-                        </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" id="postal-code" name="postal-code" placeholder="Code Postal*" required>
-                        </div>
-                        <div class="form-group">
                             <input type="text" id="city" name="city" placeholder="Ville*" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="country" name="country" placeholder="Maroc">
+                            <input type="text" id="country" name="country" placeholder="Maroc" value="Maroc" readonly>
+                        </div>
+                        <div class="form-group">
+                            <select id="role" name="role" placeholder="Rôle*" required>
+                                <option value="" disabled selected>Rôle*</option>
+                                <option value="owner">Propriétaire du restaurant</option>
+                                <option value="manager">Gérant du restaurant</option>
+                            </select>
                         </div>
                     </div>
 
@@ -207,20 +215,47 @@
         </div>
     </section>
 
-    <section id="download" class="download">
+    <section id="app-promo" class="app-promo">
+        <div class="app-promo-background">
+            <img src="assets/light-green-shape.png" alt="" class="shape-bg">
+            <div class="container">
+                <div class="app-promo-content">
+                    <div class="app-promo-text">
+                        <h2>Téléchargez Maintenant</h2>
+                        <h3>Réservez dès maintenant et transformez chaque repas en une expérience exceptionnelle !</h3>
+
+                        <div class="download-buttons">
+                            <a href="#" class="download-btn">
+                                <img src="assets/app-store.svg" alt="Télécharger sur App Store">
+                            </a>
+                            <a href="#" class="download-btn">
+                                <img src="assets/play-store.svg" alt="Obtenir sur Google Play">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="app-promo-image">
+                        <img src="assets/single-phone-screen.png" alt="Capture d'écran de l'application MyMeal"
+                            class="phone-screen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="download" class="download">
         <div class="container">
             <h2>Téléchargez Maintenant</h2>
             <p>Réservez dès maintenant et transformez chaque repas en une expérience exceptionnelle!</p>
             <div class="download-buttons">
                 <a href="#" class="download-btn">
-                    <img src="assets/appStoreBtn.png" alt="Télécharger sur App Store">
+                    <img src="assets/app-store.svg" alt="Télécharger sur App Store">
                 </a>
                 <a href="#" class="download-btn">
-                    <img src="assets/playStoreBtn.png" alt="Obtenir sur Google Play">
+                    <img src="assets/play-store.svg" alt="Obtenir sur Google Play">
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer>
         <div class="container">
@@ -272,6 +307,23 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "MyMeal",
+      "description": "Réservez des tables dans les meilleurs restaurants au Maroc. Découvrez et réservez dans les meilleurs établissements avec notre application mobile facile à utiliser.",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "FoodAndDrinkApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "MAD"
+      }
+    }
+    </script>
 </body>
 
 </html>

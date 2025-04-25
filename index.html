@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyMeal - Mobile App</title>
+    <meta name="description"
+        content="MyMeal - Book tables at the best restaurants in Morocco. Discover and reserve at top dining venues with our easy-to-use mobile app.">
+    <meta name="keywords" content="restaurant booking, Morocco restaurants, table reservation, dining app, MyMeal">
+    <meta name="author" content="MyMeal">
+    <meta name="robots" content="index, follow">
+    <title>MyMeal - Book at the Best Restaurants in Morocco | Mobile App</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,10 +63,10 @@
                         reservation and turn them into discounts on your next booking.</p>
                     <div class="download-buttons an2">
                         <a href="#" class="download-btn">
-                            <img src="assets/appStoreBtn.png" alt="Download on App Store">
+                            <img src="assets/app-store.svg" alt="Download on App Store">
                         </a>
                         <a href="#" class="download-btn">
-                            <img src="assets/playStoreBtn.png" alt="Get it on Google Play">
+                            <img src="assets/play-store.svg" alt="Get it on Google Play">
                         </a>
                     </div>
 
@@ -151,26 +156,29 @@
                         <label for="opt-out">I Do Not Wish To Receive Communications By Email/SMS From MyMeal.</label>
                     </div>
 
+
+
                     <div class="form-row">
                         <div class="form-group">
                             <input type="text" id="restaurant-name" name="restaurant-name"
                                 placeholder="Restaurant's Name*" required>
                         </div>
-                        <div class="form-group">
-                            <input type="text" id="average-price" name="average-price" placeholder="Average Price*"
-                                required>
-                        </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" id="postal-code" name="postal-code" placeholder="Postal Code*" required>
-                        </div>
-                        <div class="form-group">
                             <input type="text" id="city" name="city" placeholder="City*" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="country" name="country" placeholder="Morocco">
+                            <input type="text" id="country" name="country" placeholder="Morocco" value="Morocco"
+                                readonly>
+                        </div>
+                        <div class="form-group">
+                            <select id="role2" name="role2" required>
+                                <option value="" disabled selected>Role*</option>
+                                <option value="owner">Restaurant Owner</option>
+                                <option value="manager">Restaurant Manager</option>
+                            </select>
                         </div>
                     </div>
 
@@ -195,20 +203,45 @@
         </div>
     </section>
 
-    <section id="download" class="download">
+    <section id="download" class="app-promo">
+        <div class="app-promo-background">
+            <img src="assets/light-green-shape.png" alt="" class="shape-bg">
+            <div class="container">
+                <div class="app-promo-content">
+                    <div class="app-promo-text">
+                        <h2>Download Now</h2>
+                        <h3>Book Now and turn every meal into an exceptional experience!</h3>
+                        <div class="download-buttons">
+                            <a href="#" class="download-btn">
+                                <img src="assets/app-store.svg" alt="Download on App Store">
+                            </a>
+                            <a href="#" class="download-btn">
+                                <img src="assets/play-store.svg" alt="Get it on Google Play">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="app-promo-image">
+                        <img src="assets/single-phone-screen.png" alt="MyMeal App Screenshot" class="phone-screen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="download" class="download">
         <div class="container">
             <h2>Download Now</h2>
             <p>Book Now and turn every meal into an exceptional experience!</p>
             <div class="download-buttons">
                 <a href="#" class="download-btn">
-                    <img src="assets/appStoreBtn.png" alt="Download on App Store">
+                    <img src="assets/app-store.svg" alt="Download on App Store">
                 </a>
                 <a href="#" class="download-btn">
-                    <img src="assets/playStoreBtn.png" alt="Get it on Google Play">
+                    <img src="assets/play-store.svg" alt="Get it on Google Play">
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer>
         <div class="container">
@@ -260,6 +293,23 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "MyMeal",
+      "description": "Book tables at the best restaurants in Morocco. Discover and reserve at top dining venues with our easy-to-use mobile app.",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "FoodAndDrinkApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "MAD"
+      }
+    }
+    </script>
 </body>
 
 </html>
