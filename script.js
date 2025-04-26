@@ -41,6 +41,22 @@ document.addEventListener("DOMContentLoaded", function () {
         element.classList.add("animate");
       }
     });
+
+    // App promo section animations
+    const appPromoSection = document.querySelector(".app-promo");
+    if (appPromoSection) {
+      const appPromoPosition = appPromoSection.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (appPromoPosition < windowHeight - 100) {
+        const appPromoElements = appPromoSection.querySelectorAll(
+          ".app-promo-text h2, .app-promo-text h3, .app-promo-text .download-buttons, .phone-screen"
+        );
+        appPromoElements.forEach((element, index) => {
+          element.classList.add("animate");
+        });
+      }
+    }
   };
 
   // Run animation check on scroll

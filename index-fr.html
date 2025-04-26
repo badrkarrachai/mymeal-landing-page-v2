@@ -38,8 +38,8 @@
                         <a href="#about" class="nav-item text-nav"><span class="nav-icon about-icon"></span>À Propos</a>
                         <a href="#download" class="nav-item text-nav"><span
                                 class="nav-icon download-icon"></span>Télécharger</a>
-                        <a href="#" class="nav-item contactnav text-nav"><span
-                                class="nav-icon contact-icon"></span>Contact</a>
+                        <a href="mailto:Support@mymeal.ma?subject=Inquiry%20through%20landing%20page"
+                            class="nav-item contactnav text-nav"><span class="nav-icon contact-icon"></span>Contact</a>
                         <button class="nav-button"
                             onclick="document.getElementById('registration').scrollIntoView({behavior: 'smooth'})">Inscrire
                             Votre Restaurant</button>
@@ -84,53 +84,33 @@
 
     <section id="features" class="features">
         <div class="container padgg">
-            <h2>Fonctionnalités Exceptionnelles</h2>
+            <h2>Fonctionnalités</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-                            <line x1="9" y1="9" x2="9.01" y2="9" />
-                            <line x1="15" y1="9" x2="15.01" y2="9" />
-                        </svg>
+                        <img src="assets/F-1.svg" alt="Interface conviviale" width="230" height="230">
                     </div>
-                    <h3>Interface Conviviale</h3>
-                    <p>Explorez une grande variété de restaurants avec une conception intuitive pour une navigation sans
-                        effort.</p>
-                </div>
-                <!-- Modified feature cards -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                            <path d="M2 17l10 5 10-5" />
-                            <path d="M2 12l10 5 10-5" />
-                        </svg>
-                    </div>
-                    <h3>Réservation Instantanée</h3>
-                    <p>Réservez votre table en temps réel dans les meilleurs restaurants du Maroc avec une disponibilité
-                        garantie.
-                    </p>
+                    <h3>Explorez de nouvelles saveurs</h3>
+                    <p>Découvrez les restaurants et cuisines tendances près de chez vous</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
+                        <img src="assets/F-2.svg" alt="Réservation de table instantanée" width="230" height="230">
                     </div>
-                    <h3>Offres Gastronomiques Premium</h3>
-                    <p>Accédez à des offres spéciales et des expériences premium disponibles uniquement via les
-                        réservations MyMeal.</p>
+                    <h3>Partagez et gagnez des Miams</h3>
+                    <p>Vous et votre ami recevez chacun 250 Miams lors de sa première réservation</p>
                 </div>
-
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/F-3.svg" alt="Offres gastronomiques premium" width="230" height="230">
+                    </div>
+                    <h3>Réservez et cumulez des points</h3>
+                    <p>Collectez des points à chaque réservation et débloquez des récompenses exclusives</p>
+                </div>
             </div>
         </div>
     </section>
+
 
     <section id="registration" class="registration">
         <div class="container">
@@ -158,11 +138,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="opt-out" name="opt-out">
-                        <label for="opt-out">Je Ne Souhaite Pas Recevoir de Communications par Email/SMS de
-                            MyMeal.</label>
-                    </div>
+
 
 
 
@@ -188,6 +164,20 @@
                             </select>
                         </div>
                     </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="opt-out" name="opt-out">
+                        <label for="opt-out">En soumettant ce formulaire, j’accepte les <a
+                                href="https://mymeal.ma/mymeal/terms_of_use?lang=fr">Conditions Générales
+                                d'Utilisation</a> et la <a
+                                href="https://mymeal.ma/mymeal/privacy_policy?lang=fr">Politique de Confidentialité</a>
+                            de MyMeal.</label>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="opt-out" name="opt-out">
+                        <label for="opt-out">J’accepte de recevoir les newsletters et communications marketing de
+                            MyMeal. Je comprends que je peux me désabonner à tout moment.</label>
+                    </div>
+
 
                     <button type="submit" class="submit-button">Soumettre</button>
                 </form>
@@ -215,7 +205,7 @@
         </div>
     </section>
 
-    <section id="app-promo" class="app-promo">
+    <section id="download" class="app-promo">
         <div class="app-promo-background">
             <img src="assets/light-green-shape.png" alt="" class="shape-bg">
             <div class="container">
@@ -266,16 +256,16 @@
                 <div class="footer-links">
                     <a href="https://mymeal.ma/mymeal/terms_of_use?lang=fr">Conditions d'Utilisation</a>
                     <a href="https://mymeal.ma/mymeal/privacy_policy?lang=fr">Confidentialité</a>
-                    <a href="#">Contactez-Nous</a>
+                    <a href="mailto:Support@mymeal.ma?subject=Inquiry%20through%20landing%20page">Contactez-Nous</a>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-icon">
+                    <a href="#" class="social-icon" aria-label="Facebook">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                         </svg>
                     </a>
-                    <a href="#" class="social-icon">
+                    <a href="#" class="social-icon" aria-label="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -283,11 +273,10 @@
                             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                         </svg>
                     </a>
-                    <a href="#" class="social-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <a href="#" class="social-icon" aria-label="X">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px">
                             <path
-                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z" />
                         </svg>
                     </a>
                 </div>
